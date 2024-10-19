@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="DSAapp.AlgoStructureMenu"
+             Title="AlgoStructureMenu">
+    <VerticalStackLayout>
+        <Label 
+            Text="Welcome to .NET MAUI!"
+            VerticalOptions="Center" 
+            HorizontalOptions="Center" />
+
+        <Button
+                x:Name="AlgoMenuButton"
+                Text="Algorithms Menu" 
+                SemanticProperties.Hint="Algorithms Menu Button"
+                Clicked="OnAlgoMenuClicked"
+                HorizontalOptions="Fill" />
+
+        <Button
+                x:Name="StructureMenuButton"
+                Text="Structures Menu" 
+                SemanticProperties.Hint="Structures Menu Button"
+                Clicked="OnStructureMenuClicked"
+                HorizontalOptions="Fill" />
+    </VerticalStackLayout>
+</ContentPage>

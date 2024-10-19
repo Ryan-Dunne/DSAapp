@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="DSAapp.AlgorithmsList"
+             Title="AlgorithmsList">
+    <VerticalStackLayout>
+        <Label 
+            Text="Algorithms List"
+            VerticalOptions="Center" 
+            HorizontalOptions="Center" />
+
+        <Button
+                x:Name="LinearSearchButton"
+                Text="Linear Search" 
+                SemanticProperties.Hint="Linear Search Button"
+                Clicked="OnLinearSearchClicked"
+                HorizontalOptions="Fill" />
+
+        <Button
+                x:Name="FindFirstButton"
+                Text="Find First" 
+                SemanticProperties.Hint="Find First Button"
+                Clicked="OnFindFirstClicked"
+                HorizontalOptions="Fill" />
+    </VerticalStackLayout>
+</ContentPage>
